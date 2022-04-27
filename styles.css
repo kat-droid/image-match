@@ -1,0 +1,31 @@
+.c-heading_title {
+    font-size: 48px;
+    font-weight: 500;
+}
+
+.c-options_canvas {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.c-options_canvas.-diff {
+    justify-content: center;
+}
+
+.c-options_canvas-label {
+    font-size: 16px;
+    font-weight: 600;
+    display: inline;
+}
+
+.c-options_canvas-frame {
+    display: block;
+    min-width: 25vw;
+    min-height: 35vh;
+    max-width: 500px;
+    border: 1px solid black;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: beige;
+}
