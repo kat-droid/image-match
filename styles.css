@@ -1,3 +1,60 @@
+.c-nav {
+    overflow: hidden;
+}
+
+.c-nav .c-nav_list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    min-height: 60px;
+    background-color: lightpink;
+    padding: 20px;
+}
+  
+.c-nav .c-nav_list-item {
+    color: #f2f2f2;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.c-nav .c-nav_list-item:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+/* Add a black background color to the top navigation */
+.topnav {
+    background-color: rgb(208, 205, 205);
+    overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+    background-color: purple;
+    color: white;
+}
+
+.c-nav .c-nav_list-item {
+    color: black;
+}
+
 .c-heading_title {
     font-size: 48px;
     font-weight: 500;
@@ -24,8 +81,91 @@
     min-width: 25vw;
     min-height: 35vh;
     max-width: 500px;
-    border: 1px solid black;
+    border: 2px dashed purple;
     margin-top: 20px;
     margin-bottom: 20px;
-    background-color: beige;
+    background-color: rgb(208, 205, 205);
+    border-radius: 5px;
+}
+
+.c-images_list {
+    display: flex;
+    list-style-type: none;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+.c-images_list-img {
+    margin-right: 40px;
+    border: 1px solid black;
+}
+
+.c-images_list-img {
+    max-width: 100px;
+    max-height: 100px;
+}
+
+.c-separator {
+    min-height: 40px;
+}
+
+.c-options_actions {
+    margin: 20px 0;
+}
+
+.c-options_actions-cta {
+    min-height: 40px;
+    min-width: 120px;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.c-options_actions-cta.enabled {
+    min-height: 40px;
+    min-width: 120px;
+    background-color: violet;
+    border: 2px dashed purple;
+    color: white;
+}
+
+.c-options_actions-property {
+    border: 1px solid purple;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 0 20px;
+}
+
+.c-options_actions-inputs {
+    display: flex;
+    justify-content: center;
+}
+.c-options_actions-select {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.c-options_actions-property--threshold,
+.c-options_actions-property--alpha {
+
+}
+
+.c-options_actions-property--diffColor,
+.c-options_actions-property--aaColor {
+    width: 100%;
+}
+
+.c-options_actions-property--includeAA {
+    width: 100%;
+}
+
+.c-options_actions-property--input {
+    border: 0;
+    margin-top: 10px;
+}
+
+.c-options_actions-property--label {
+    font-size: 16px;
+    font-weight: 600;
 }

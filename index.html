@@ -10,13 +10,10 @@
 
 <body>
     <div class="c-page-wrap">
-        <div class="c-heading">
-            <div class="container">
-                <div class="col-xs-24 center-block">
-                    <h1 class="c-heading_title">Image Match - pixelmatchJS</h1>
-                </div>
-            </div>
+        <div class="topnav">
+            <a class="active" href="#home">Image Comparison - pixelmatch</a>
         </div>
+        <div class="c-separator"></div>
 
         <div class="c-options">
             <div class="container">
@@ -35,14 +32,57 @@
                         </div>
                     </div>
 
+                    <div class="c-options_actions">
+                        <div class="c-options_actions-inputs">
+                            <!-- threshold -->
+                            <div class="c-options_actions-property">
+                                <p class="c-options_actions-property--label">threshold:</p>
+                                <input class="c-options_actions-property--threshold thresholdInput js-pixelmatch-property" type="range" min="0" max="1" value="0.1" step="0.1">
+                                <input type="text" class="c-options_actions-property--input thresholdVal js-pixelmatch-property" value="0.1">
+                            </div>
+
+                            <!-- includAA -->
+                            <div class="c-options_actions-property">
+                                <p class="c-options_actions-property--label">includeAA:</p>
+                                <input type="checkbox" class="c-options_actions-property--includeAA includeAAInput js-pixelmatch-property">
+                                <input type="text" class="c-options_actions-property--input includeAAVal js-pixelmatch-property" value="false">
+                            </div>
+
+                            <!-- alpha -->
+                            <div class="c-options_actions-property">
+                                <p class="c-options_actions-property--label">alpha:</p>
+                                <input class="c-options_actions-property--alpha alphaInput js-pixelmatch-property" type="range" min="0" max="1" value="0.1" step="0.1">
+                                <input type="text" class="c-options_actions-property--input alphaVal js-pixelmatch-property" value="0.1">
+                            </div>
+
+                             <!-- aaColor -->
+                            <div class="c-options_actions-property">
+                                <p class="c-options_actions-property--label">aaColor:</p>
+                                <input class="c-options_actions-property--aaColor aaColorInput js-pixelmatch-property" type="color" id="color_picker" value="#800080">
+                                <input type="text" class="c-options_actions-property--input aaColorVal js-pixelmatch-property" value="#800080">
+                            </div>
+
+                            <!-- diffColor -->
+                            <div class="c-options_actions-property">
+                                <p class="c-options_actions-property--label">diffColor:</p>
+                                <input class="c-options_actions-property--diffColor diffColorInput js-pixelmatch-property" type="color" id="color_picker" value="#800080">
+                                <input type="text" class="c-options_actions-property--input diffColorVal js-pixelmatch-property" value="#800080">
+                            </div>
+                        </div>
+
+                        <div class="c-options_actions-select">
+                            <button class="c-options_actions-cta js-options-compare" disabled>Compare</button>
+                        </div>
+                        
+                    </div>
+
                     <div class="c-options_canvas -diff">
                         <div class="c-options_canvas-item">
                             <p class="c-options_canvas-label">Difference:</p>
-                            <output></output><br>
+                            <output></output>
                             <canvas class="c-options_canvas-frame"></canvas>
                         </div>
                     </div>
-
                 </div>
             </div>
         </div> 
@@ -53,6 +93,7 @@
     <script src="./imageMatch.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.0/axios.min.js"></script>
 </body>
 
 </html>
